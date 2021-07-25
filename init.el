@@ -150,7 +150,7 @@
        (org                ; organize your plain life in plain text
         +pretty            ; yessss my pretties! (nice unicode symbols)
         +dragndrop         ; drag & drop files/images into org buffers
-        ;;+hugo            ; use Emacs for hugo blogging
+        +hugo            ; use Emacs for hugo blogging
         +noter             ; enhanced PDF notetaking
         +jupyter           ; ipython/jupyter support for babel
         +pandoc            ; export-with-pandoc support
