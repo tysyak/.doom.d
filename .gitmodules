@@ -1,0 +1,3 @@
+[submodules "elcord"]
+	path = vendor/elcord
+	url = git@github.com:tysyak/elcord.git
