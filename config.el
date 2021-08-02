@@ -54,6 +54,7 @@
 ;; they are implemented.
 ;;
 
+(load! "org-latex-stuff.el")
 (load! "dashboard/dashboard.el")
 (load! "vendor/elcord/elcord.el")
 (load! "keybinds.el")

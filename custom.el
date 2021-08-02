@@ -5,6 +5,9 @@
  ;; If there is more than one, they won't work right.
  '(LaTeX-command-style
    '(("" "%(PDF)%(latex) -shell-escape %(file-line-error) %(extraopts) %(output-dir) %S%(PDFout)")))
+ '(TeX-view-program-list '(("xreader" "xreader --page-index=%(outpage) %o")))
+ '(TeX-view-program-selection '((output-pdf "xreader")))
+ '(org-latex-listings 'minted)
  '(confirm-kill-emacs nil)
  '(org-latex-pdf-process
    '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "bibtex %b" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
