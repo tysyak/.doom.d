@@ -56,6 +56,13 @@ This module provides no flags.
 * Prerequisites
 A submodule of the same author is used for integration with discord, well you can comment the line to omit this integraton.
 
+This module use a *Fira Code* fonts, by avoid some ungly fonts install fira code
+symbols(mentioned in the ligatures package documentation).
+- Arch Linux (with AUR)
+  #+begin_src sh
+$ yay -S otf-fira-code-symbol
+  #+end_src
+
 * Features
 # An in-depth list of features, how to use them, and their dependencies.
 
