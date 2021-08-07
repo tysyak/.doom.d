@@ -51,11 +51,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-;;
 
 (load! "org-latex-stuff.el")
 (load! "dashboard/dashboard.el")
 (load! "vendor/elcord/elcord.el")
+(load! "interactive-scripts.el")
 (load! "keybinds.el")
 
 (setq wakatime-api-key (getenv "WAKA_API_KEY"))

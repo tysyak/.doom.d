@@ -36,14 +36,6 @@
   (local-set-key "\C-ce" 'TeX-emphasis)
   (local-set-key "\C-cs" 'TeX-smallcaps))
 
-(defun insert-minted ()
-  (interactive)
-  (insert "#+latex: \\begin{code}\n")
-  (insert "#+begin_src\n")
-  (insert "#+end_src\n")
-  (insert "#+latex: \\end{code}\n")
-  (backward-char 2))
-
 
 (add-hook 'LaTeX-mode-hook 'latex-font-hook)
 ;; --- --- --- --- --- --- ---
