@@ -15,7 +15,9 @@
  '(TeX-view-program-selection '((output-pdf "xreader")))
  '(package-selected-packages '(vcard org-vcard vala-mode nasm-mode ag))
  '(wakatime-cli-path "/usr/bin/wakatime")
- '(wakatime-python-bin nil))
+ '(wakatime-python-bin nil)
+ '(LANGUAGE-NAME "spanish")
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
