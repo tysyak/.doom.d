@@ -12,7 +12,12 @@
 
  '(org-latex-listings 'minted)
  '(org-latex-pdf-process
-   '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "bibtex %b" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+   '(
+     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" 
+     "bibtex %b" 
+     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" 
+     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+     ))
  '(org-roam-directory "~/org/roam")
 
  '(confirm-kill-emacs nil)
