@@ -12,12 +12,7 @@
 
  '(org-latex-listings 'minted)
  '(org-latex-pdf-process
-   '(
-     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" 
-     "bibtex %b" 
-     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" 
-     "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
-     ))
+   '("%latex -shell-escape -interaction nonstopmode -output-directory %o %f" "biber %b" "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" "%latex -shell-escape -interaction nonstopmode -output-directory %o %f" "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"))
  '(org-roam-directory "~/org/roam")
 
  '(confirm-kill-emacs nil)
@@ -33,3 +28,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
