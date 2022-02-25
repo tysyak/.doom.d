@@ -17,13 +17,12 @@
 \\usepackage{xcolor}
 \\definecolor{LightGray}{gray}{0.9}
 \\definecolor{DarkGray}{HTML}{191919}
-\\definecolor{custom}{HTML}{F8F8F8}
+\\definecolor{custom}{HTML}{FFFFFF}
 \\usepackage{caption}
-\\usepackage{breqn}
 \\usemintedstyle{emacs}
 \\usepackage[ruled,vlined]{algorithm2e}
 \\newenvironment{code}{\\captionsetup{type=listing}}{}
-\\setminted{frame=lines,breaklines=true,bgcolor=custom,fontsize=\\scriptsize,autogobble}
+\\setminted{frame=lines,breaklines=true,fontsize=\\scriptsize,autogobble}
 \\renewcommand{\\listingscaption}{Código}
 \\renewcommand\\listoflistingscaption{Índice de \\listingscaption\\@s}
 \\BeforeBeginEnvironment{minted}{\\begin{code}}
@@ -40,7 +39,7 @@
 
 (with-eval-after-load 'ox-latex
   (add-to-list 'org-latex-classes
-               '("scrartcl"
+               '("koma-script"
                  "\\documentclass{scrartcl}
 \\usepackage[left=1.5cm,right=1.5cm,letterpaper]{geometry}
 \\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
@@ -55,7 +54,7 @@
 \\usepackage{xcolor}
 \\definecolor{LightGray}{gray}{0.9}
 \\definecolor{DarkGray}{HTML}{191919}
-\\definecolor{custom}{HTML}{F8F8F8}
+\\definecolor{custom}{HTML}{FFFFFF}
 \\usepackage{caption}
 \\usepackage{breqn}
 \\usemintedstyle{emacs}
