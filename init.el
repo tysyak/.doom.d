@@ -21,9 +21,9 @@
 
        :completion
        (company +childframe)           ; the ultimate code completion backend
-       ;;helm              ; the *other* search engine for love and life
-       ;;ido               ; the other *other* search engine...
-       ;;ivy               ; a search engine for love and life
+       ;; (helm +icons)              ; the *other* search engine for love and life
+       ;; ido               ; the other *other* search engine...
+       ;; (ivy +icons +fuzzy)               ; a search engine for love and life
        (vertico +icons)           ; the search engine of the future
 
        :ui
@@ -57,7 +57,7 @@
        ;;(evil +everywhere); come to the dark side, we have cookies
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
-       ;;(format +onsave)  ; automated prettiness
+       (format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
        multiple-cursors  ; editing in many places at once
@@ -139,7 +139,7 @@
        ;;idris             ; a language you can depend on
        json              ; At least it ain't XML
        (java +meghanada) ; the poster child for carpal tunnel syndrome
-       javascript        ; all(hope(abandon(ye(who(enter(here))))))
+       (javascript +lsp +tree-sitter)        ; all(hope(abandon(ye(who(enter(here))))))
        julia             ; a better, faster MATLAB
        kotlin            ; a better, slicker Java(Script)
        (latex +fold +lsp)             ; writing papers in Emacs has never been so fun
@@ -160,7 +160,7 @@
         +gnuplot           ; who doesn't like pretty pictures
         +pomodoro        ; be fruitful with the tomato technique
         +present           ; using org-mode for presentations
-        +roam2
+        +roam3
 	)               ; organize your plain life in plain text
        (php +lsp)               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
